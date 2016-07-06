@@ -1,0 +1,50 @@
+.c-btn {
+  line-height: 1.333;
+  padding: 10px 20px;
+  font-size: 9px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.c-btn__yellow {
+  color: #fff;
+  background-color: #ffa800;
+}
+
+.c-btn-rounded {
+  color: #777;
+  line-height: 1.333;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: 700;
+  background-color: #fff;
+  border: 1px solid  #c8c8c8;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.c-btn-rounded__orange {
+  background-color: #ffa400;
+  border: 1px solid  #ffa400;
+  color: #fff;
+}
+
+.c-btn-rounded__blue {
+  background-color: #2281c0;
+  border: 1px solid  #2281c0;
+  color: #fff;
+}
+
+.c-icn-btn {
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 1.5;
+}
+
+.c-icn-btn__yellow {
+  background-color: #ffa100;
+}
+
+.c-icn-btn__blue {
+  background-color: #2b8bcc;
+}

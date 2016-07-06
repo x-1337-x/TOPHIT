@@ -1,0 +1,108 @@
+.l-header {
+  width: 100%;
+  position: relative;
+}
+
+.l-header-subnav {
+  width: 100%;
+  background-color: #f1f1f1;
+  line-height: 1.3333;
+}
+
+.l-header-subnav-lang-container {
+  float: left;
+}
+
+.l-header-subnav-lang {
+  font-size: 10px;
+  font-weight: 700;
+  color: #777;
+  padding: 12px;
+  line-height: 1.333;
+  float: left;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.l-header-subnav-lang__active {
+  color: #000;
+  background-color: #fff;
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+}
+
+.l-header-subnav-items-container {
+  float: right;
+  padding: 8px 0;
+}
+
+.l-header-subnav-item {
+  float: left;
+  padding: 0 10px;
+  line-height: 1.3333;
+
+  a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.5;
+  }
+
+   span {
+    vertical-align: middle;
+    opacity: 0.5;
+    margin: 0 5px;
+   }
+
+   &:hover {
+    a, span {
+      opacity: 1;
+    }
+   }
+}
+
+.l-header-nav {
+  width: 100%;
+  padding: 15px 0;
+  vertical-align: middle;
+  line-height: 1.3333;
+  position: absolute;
+  top: 37px;
+  background-color: rgba(#fff, 0.5);
+}
+
+.l-header-nav--logo,
+.l-header-navbar {
+  float: left;
+}
+.l-header-auth-block {
+  float: right;
+  padding: 10px 0;
+}
+
+.l-header-navbar {
+  width: auto;
+  padding: 15px 20px;
+}
+
+.l-header-navbar-item {
+  display: inline-block;
+  padding: 0 20px;
+
+  a {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+}
+
+.l-header-auth-block--button {
+    margin: 0 5px;
+    display: inline-block;
+}

@@ -1,3 +1,355 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic';
+.icon-arrow-more_blue {
+  background-image: url(../i/sprite.png);
+  background-position: -64px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-arrow_l {
+  background-image: url(../i/sprite.png);
+  background-position: -30px -174px;
+  width: 11px;
+  height: 17px; }
+
+.icon-arrow_r {
+  background-image: url(../i/sprite.png);
+  background-position: -19px -174px;
+  width: 11px;
+  height: 17px; }
+
+.icon-audio {
+  background-image: url(../i/sprite.png);
+  background-position: -31px -158px;
+  width: 16px;
+  height: 14px; }
+
+.icon-broadcast {
+  background-image: url(../i/sprite.png);
+  background-position: -63px -158px;
+  width: 14px;
+  height: 14px; }
+
+.icon-burger {
+  background-image: url(../i/sprite.png);
+  background-position: -80px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-cellphone {
+  background-image: url(../i/sprite.png);
+  background-position: -41px -174px;
+  width: 10px;
+  height: 16px; }
+
+.icon-clock {
+  background-image: url(../i/sprite.png);
+  background-position: -96px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-compass {
+  background-image: url(../i/sprite.png);
+  background-position: -112px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-email {
+  background-image: url(../i/sprite.png);
+  background-position: -126px -76px;
+  width: 16px;
+  height: 16px; }
+
+.icon-envelope {
+  background-image: url(../i/sprite.png);
+  background-position: -32px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-facebook {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -174px;
+  width: 10px;
+  height: 21px; }
+
+.icon-facebook_blue {
+  background-image: url(../i/sprite.png);
+  background-position: -70px -174px;
+  width: 9px;
+  height: 16px; }
+
+.icon-facebook_white {
+  background-image: url(../i/sprite.png);
+  background-position: -79px -174px;
+  width: 9px;
+  height: 16px; }
+
+.icon-google-play {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -104px;
+  width: 142px;
+  height: 38px; }
+
+.icon-google_play_onhover, #store-gplay:hover {
+  background-image: url(../i/sprite.png);
+  background-position: -143px 0px;
+  width: 138px;
+  height: 34px; }
+
+.icon-help {
+  background-image: url(../i/sprite.png);
+  background-position: -128px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-info {
+  background-image: url(../i/sprite.png);
+  background-position: -255px -108px;
+  width: 18px;
+  height: 18px; }
+
+.icon-info_black {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-instagram_white {
+  background-image: url(../i/sprite.png);
+  background-position: -16px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-itunes {
+  background-image: url(../i/sprite.png);
+  background-position: -143px -71px;
+  width: 105px;
+  height: 37px; }
+
+.icon-itunes_onhover, #store-itunes:hover {
+  background-image: url(../i/sprite.png);
+  background-position: -143px -34px;
+  width: 105px;
+  height: 37px; }
+
+.icon-linkedin_white {
+  background-image: url(../i/sprite.png);
+  background-position: -77px -158px;
+  width: 13px;
+  height: 13px; }
+
+.icon-logo {
+  background-image: url(../i/sprite.png);
+  background-position: 0px 0px;
+  width: 143px;
+  height: 55px; }
+
+.icon-logo_sm {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -55px;
+  width: 126px;
+  height: 49px; }
+
+.icon-mic {
+  background-image: url(../i/sprite.png);
+  background-position: -51px -174px;
+  width: 10px;
+  height: 16px; }
+
+.icon-more_vertical {
+  background-image: url(../i/sprite.png);
+  background-position: -273px -108px;
+  width: 4px;
+  height: 16px; }
+
+.icon-new {
+  background-image: url(../i/sprite.png);
+  background-position: -160px -142px;
+  width: 23px;
+  height: 11px; }
+
+.icon-pause {
+  background-image: url(../i/sprite.png);
+  background-position: -143px -108px;
+  width: 30px;
+  height: 30px; }
+
+.icon-pause_blue {
+  background-image: url(../i/sprite.png);
+  background-position: -248px -34px;
+  width: 30px;
+  height: 30px; }
+
+.icon-play {
+  background-image: url(../i/sprite.png);
+  background-position: -248px -71px;
+  width: 30px;
+  height: 30px; }
+
+.icon-play_blue {
+  background-image: url(../i/sprite.png);
+  background-position: -173px -108px;
+  width: 30px;
+  height: 30px; }
+
+.icon-rating-down {
+  background-image: url(../i/sprite.png);
+  background-position: -264px -64px;
+  width: 16px;
+  height: 7px; }
+
+.icon-rating-down_double {
+  background-image: url(../i/sprite.png);
+  background-position: -203px -129px;
+  width: 16px;
+  height: 9px; }
+
+.icon-rating-equal {
+  background-image: url(../i/sprite.png);
+  background-position: -248px -101px;
+  width: 9px;
+  height: 5px; }
+
+.icon-rating-up {
+  background-image: url(../i/sprite.png);
+  background-position: -248px -64px;
+  width: 16px;
+  height: 7px; }
+
+.icon-rating-up_double {
+  background-image: url(../i/sprite.png);
+  background-position: -219px -129px;
+  width: 16px;
+  height: 9px; }
+
+.icon-re {
+  background-image: url(../i/sprite.png);
+  background-position: -183px -142px;
+  width: 11px;
+  height: 11px; }
+
+.icon-search {
+  background-image: url(../i/sprite.png);
+  background-position: -48px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-search_blue {
+  background-image: url(../i/sprite.png);
+  background-position: -144px -142px;
+  width: 16px;
+  height: 16px; }
+
+.icon-share {
+  background-image: url(../i/sprite.png);
+  background-position: -219px -108px;
+  width: 18px;
+  height: 18px; }
+
+.icon-share_blue {
+  background-image: url(../i/sprite.png);
+  background-position: -237px -108px;
+  width: 18px;
+  height: 18px; }
+
+.icon-twitter {
+  background-image: url(../i/sprite.png);
+  background-position: -126px -55px;
+  width: 15px;
+  height: 21px; }
+
+.icon-twitter_blue {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -158px;
+  width: 15px;
+  height: 16px; }
+
+.icon-twitter_white {
+  background-image: url(../i/sprite.png);
+  background-position: -15px -158px;
+  width: 16px;
+  height: 14px; }
+
+.icon-user {
+  background-image: url(../i/sprite.png);
+  background-position: -203px -108px;
+  width: 16px;
+  height: 21px; }
+
+.icon-video {
+  background-image: url(../i/sprite.png);
+  background-position: -126px -92px;
+  width: 16px;
+  height: 12px; }
+
+.icon-views {
+  background-image: url(../i/sprite.png);
+  background-position: -47px -158px;
+  width: 16px;
+  height: 14px; }
+
+.icon-vk {
+  background-image: url(../i/sprite.png);
+  background-position: -10px -174px;
+  width: 9px;
+  height: 21px; }
+
+.icon-vk_blue {
+  background-image: url(../i/sprite.png);
+  background-position: -61px -174px;
+  width: 9px;
+  height: 16px; }
+
+.icon-vk_white {
+  background-image: url(../i/sprite.png);
+  background-position: -90px -158px;
+  width: 9px;
+  height: 12px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -45,20 +397,214 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: border-box;
+  outline: none; }
+
 body, html {
   height: 100%; }
 
 body {
-  font: normal 16px/1.4 Arial, sans-serif; }
+  font: normal 16px/1.4 Open Sans, Arial, sans-serif; }
 
-.p-home {
-  padding: 20px 0; }
+.wrapper {
+  max-width: 980px;
+  margin: auto; }
 
-.p-home--promo {
-  background: #e0e0e0;
-  padding: 20px; }
+.icon {
+  display: inline-block; }
 
-.p-home--teasers {
-  margin: 20px 0;
-  padding: 20px;
-  background: #e0e0e0; }
+a {
+  text-decoration: none; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.truncate {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.hidden {
+  display: none; }
+
+.c-btn {
+  line-height: 1.333;
+  padding: 10px 20px;
+  font-size: 9px;
+  font-weight: 700;
+  display: inline-block; }
+
+.c-btn__yellow {
+  color: #fff;
+  background-color: #ffa800; }
+
+.c-btn-rounded {
+  color: #777;
+  line-height: 1.333;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: 700;
+  background-color: #fff;
+  border: 1px solid  #c8c8c8;
+  border-radius: 20px;
+  display: inline-block; }
+
+.c-btn-rounded__orange {
+  background-color: #ffa400;
+  border: 1px solid  #ffa400;
+  color: #fff; }
+
+.c-btn-rounded__blue {
+  background-color: #2281c0;
+  border: 1px solid  #2281c0;
+  color: #fff; }
+
+.c-icn-btn {
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 1.5; }
+
+.c-icn-btn__yellow {
+  background-color: #ffa100; }
+
+.c-icn-btn__blue {
+  background-color: #2b8bcc; }
+
+.l-header {
+  width: 100%;
+  position: relative; }
+
+.l-header-subnav {
+  width: 100%;
+  background-color: #f1f1f1;
+  line-height: 1.3333; }
+
+.l-header-subnav-lang-container {
+  float: left; }
+
+.l-header-subnav-lang {
+  font-size: 10px;
+  font-weight: 700;
+  color: #777;
+  padding: 12px;
+  line-height: 1.333;
+  float: left; }
+  .l-header-subnav-lang:hover {
+    cursor: pointer; }
+
+.l-header-subnav-lang__active {
+  color: #000;
+  background-color: #fff;
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed; }
+
+.l-header-subnav-items-container {
+  float: right;
+  padding: 8px 0; }
+
+.l-header-subnav-item {
+  float: left;
+  padding: 0 10px;
+  line-height: 1.3333; }
+  .l-header-subnav-item a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.5; }
+  .l-header-subnav-item span {
+    vertical-align: middle;
+    opacity: 0.5;
+    margin: 0 5px; }
+  .l-header-subnav-item:hover a, .l-header-subnav-item:hover span {
+    opacity: 1; }
+
+.l-header-nav {
+  width: 100%;
+  padding: 15px 0;
+  vertical-align: middle;
+  line-height: 1.3333;
+  position: absolute;
+  top: 37px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.l-header-nav--logo,
+.l-header-navbar {
+  float: left; }
+
+.l-header-auth-block {
+  float: right;
+  padding: 10px 0; }
+
+.l-header-navbar {
+  width: auto;
+  padding: 15px 20px; }
+
+.l-header-navbar-item {
+  display: inline-block;
+  padding: 0 20px; }
+  .l-header-navbar-item a {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700; }
+  .l-header-navbar-item span {
+    vertical-align: middle; }
+
+.l-header-auth-block--button {
+  margin: 0 5px;
+  display: inline-block; }
+
+.l-hero {
+  padding: 220px 0 100px 0;
+  background-image: url("../i/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.l-hero-column {
+  width: 50%; }
+
+.l-hero--header {
+  font-size: 45px;
+  font-weight: 300; }
+
+.l-hero--subheader {
+  font-size: 18px;
+  font-weight: 700;
+  color: #adadad; }
+
+.l-hero--video {
+  padding: 25px 0; }
+
+#l-hero--video {
+  box-shadow: 5px 4px 30px 0px rgba(50, 50, 50, 0.37); }
+
+.l-hero--store {
+  display: inline-block;
+  margin-right: 20px; }
+
+.l-hero-slide--button {
+  float: right; }
+
+.l-hero-banner {
+  display: block;
+  position: absolute;
+  height: 90px;
+  bottom: -50px;
+  box-shadow: -8px 8px 30px 0px rgba(50, 50, 50, 0.26); }
+
+.l-hero-banner--item {
+  width: 245px;
+  height: 90px;
+  float: left;
+  position: relative; }
+
+.l-hero-banner--item-button-block {
+  position: absolute;
+  right: 10px;
+  bottom: 10px; }

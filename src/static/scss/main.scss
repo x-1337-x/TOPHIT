@@ -1,6 +1,24 @@
-@import './utils/variables';
+@import './abstracts/variables';
+@import './abstracts/sprite';
+@include sprites($spritesheet-sprites);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic';
+
 
 @import './base/reset';
 @import './base/base';
 
-@import './pages/home';
+@import './components/small-components';
+
+
+@import './layout/header';
+@import './layout/hero';
+
+
+
+
+// @import '../../../bower_components/slick-carousel/slick/slick.css';
+// @import '../../../bower_components/slick-carousel/slick/slick-theme.css';
+
+// @import '../../../bower_components/fancyBox/source/jquery.fancybox.css';
+
+// @import './vendors/slick-theme-override';
