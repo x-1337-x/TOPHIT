@@ -35,11 +35,11 @@ a {
 }
 
 .truncate {
-  white-space: wrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
