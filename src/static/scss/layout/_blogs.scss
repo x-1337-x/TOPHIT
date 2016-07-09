@@ -1,0 +1,42 @@
+.l-blogs {
+  width: 100%;
+}
+
+.l-blogs--body {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.l-blogs-container__main {
+  width: 70%;
+}
+
+.l-blogs--unit {
+  border: 1px solid #f2f2f2;
+}
+
+.c-blog-item--image {
+  width: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.c-blog-item--image-button {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.c-blog-item--header__big {
+  padding: 25px 0;
+  border-bottom: 0.5px solid #e6e6e6;
+
+  a {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000;
+  }
+}

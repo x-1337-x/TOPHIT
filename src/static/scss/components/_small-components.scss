@@ -1,3 +1,5 @@
+//  BUTTONS
+
 .c-btn {
   line-height: 1.333;
   padding: 10px 20px;
@@ -8,8 +10,15 @@
 }
 
 .c-btn__yellow {
+  @extend .c-btn;
   color: #fff;
   background-color: #ffa800;
+}
+
+.c-btn__blue {
+  @extend .c-btn;
+  color: #fff;
+  background-color: #3498db;
 }
 
 .c-btn-rounded {
@@ -26,12 +35,14 @@
 }
 
 .c-btn-rounded__orange {
+  @extend .c-btn-rounded;
   background-color: #ffa400;
   border: 1px solid  #ffa400;
   color: #fff;
 }
 
 .c-btn-rounded__blue {
+  @extend .c-btn-rounded;
   background-color: #2281c0;
   border: 1px solid  #2281c0;
   color: #fff;
@@ -44,12 +55,18 @@
 }
 
 .c-icn-btn__yellow {
+  @extend .c-icn-btn;
   background-color: #ffa100;
 }
 
 .c-icn-btn__blue {
+  @extend .c-icn-btn;
   background-color: #2b8bcc;
 }
+
+//=========================
+
+//  SLIDER INDICATOR
 
 .c-slide-controls-indicator {
   margin: auto;
@@ -76,3 +93,28 @@
   @extend .c-slide-controls-dot;
   background-color: #fff;
 }
+
+//=========================
+
+//  DIVIDERS
+.c-divider {
+  width: 100%;
+  border: 2px solid;
+}
+
+.c-divider__blue {
+  @extend .c-divider;
+  border-color: #2281c0;
+}
+
+.c-divider__orange {
+  @extend .c-divider;
+  border-color: #ffa100;
+}
+
+.c-divider__purple {
+  @extend .c-divider;
+  border-color: #c44d9b;
+}
+
+//=========================
