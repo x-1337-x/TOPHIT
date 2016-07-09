@@ -1,4 +1,14 @@
 .l-charts {
   width: 100%;
+  background: url(../../../src/static/i/charts_bg.png) center bottom repeat-x;
 }
 
+.l-charts--body {
+  padding: 50px 0;
+}
+
+.l-charts--slide-controls {
+  width: 100%;
+  min-height: 30px;
+  padding-top: 20px;
+}
