@@ -297,7 +297,7 @@ The `sprites` mixin generates identical output to the CSS template
   width: 18px;
   height: 18px; }
 
-.icon-share_blue {
+.icon-share_blue, .c-article-info-share:hover span {
   background-image: url(../i/sprite.png);
   background-position: -255px -108px;
   width: 18px;
@@ -453,7 +453,7 @@ a {
 .pull-right {
   float: right !important; }
 
-.c-btn, .c-btn__yellow, .c-blog-item--image-button:hover, .c-btn__blue {
+.c-btn, .c-btn__yellow, .c-article-image-button:hover, .c-btn__blue {
   line-height: 1.333;
   padding: 10px 20px;
   font-size: 9px;
@@ -462,7 +462,7 @@ a {
   display: inline-block;
   text-align: center; }
 
-.c-btn__yellow, .c-blog-item--image-button:hover {
+.c-btn__yellow, .c-article-image-button:hover {
   color: #fff;
   background-color: #ffa800; }
 
@@ -470,7 +470,7 @@ a {
   color: #fff;
   background-color: #3498db; }
 
-.c-btn-rounded, .c-btn-rounded__orange, .c-btn-rounded__blue, .c-btn-rounded__set:hover, .c-btn-rounded__chart:hover, .c-btn-rounded__blog:hover, .c-btn-rounded__set, .c-btn-rounded__chart, .c-btn-rounded__blog {
+.c-btn-rounded, .c-btn-rounded__orange, .c-btn-rounded__blue, .c-btn-rounded__set:hover, .c-btn-rounded__chart:hover, .c-btn-rounded__article:hover, .c-btn-rounded__set, .c-btn-rounded__chart, .c-btn-rounded__article {
   color: #777;
   line-height: 1.333;
   padding: 10px 20px;
@@ -488,7 +488,7 @@ a {
   border: 1px solid  #ffa400;
   color: #fff; }
 
-.c-btn-rounded__blue, .c-btn-rounded__set:hover, .c-btn-rounded__chart:hover, .c-btn-rounded__blog:hover {
+.c-btn-rounded__blue, .c-btn-rounded__set:hover, .c-btn-rounded__chart:hover, .c-btn-rounded__article:hover {
   background-color: #2281c0;
   border: 1px solid  #2281c0;
   color: #fff; }
@@ -546,7 +546,7 @@ a {
 .c-slide-controls-dot__active {
   background-color: #fff; }
 
-.c-divider, .c-divider__blue, .c-divider__orange, .c-divider__purple {
+.c-divider, .c-divider__blue, .c-divider__orange, .c-divider__purple, .c-divider__green {
   width: 100%;
   border: 2px solid; }
 
@@ -558,6 +558,9 @@ a {
 
 .c-divider__purple {
   border-color: #c44d9b; }
+
+.c-divider__green {
+  border-color: #60c80d; }
 
 .c-set-item {
   min-width: 33%;
@@ -894,6 +897,147 @@ a {
     opacity: 0.3;
     margin-right: 5px; }
 
+.c-article-info-share {
+  float: right;
+  padding-top: 11px; }
+
+.c-article-category, .c-article-category__purple, .c-article-category__orange, .c-article-category__green, .c-article-category__blue {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+.c-article-category__purple {
+  color: #c44d9b; }
+
+.c-article-category__orange {
+  color: #ffa100; }
+
+.c-article-category__green {
+  color: #60c80d; }
+
+.c-article-category__blue {
+  color: #3498db; }
+
+.c-article-image {
+  width: 100%;
+  position: relative; }
+  .c-article-image img {
+    width: 100%; }
+
+.c-article-image-button {
+  position: absolute;
+  bottom: 30px;
+  left: 30px; }
+
+.c-article-header__big {
+  padding: 25px 0;
+  border-bottom: 0.5px solid #e6e6e6; }
+  .c-article-header__big a {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000; }
+
+.c-article-author {
+  width: 100%;
+  padding: 10px 0; }
+
+.c-article-author-userpic {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin-right: 10px; }
+
+.c-article-author-name {
+  float: left;
+  max-width: 50%;
+  padding-top: 10px; }
+
+.c-article-author-text__primary a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #101010; }
+
+.c-article-author-text__primary a:hover {
+  text-decoration: underline; }
+
+.c-article-author-text__secondary {
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #a9a8a8; }
+
+.c-article-ingsoc {
+  float: right;
+  position: relative;
+  padding-top: 15px; }
+  .c-article-ingsoc:hover:before {
+    content: 'НАЙТИ МЕНЯ';
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #a9a8a8;
+    position: absolute;
+    top: 50%;
+    left: -100px; }
+
+.c-article-ingsoc-branch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px; }
+  .c-article-ingsoc-branch:last-child {
+    margin-right: 0; }
+
+.c-article-summary {
+  font-size: 15px;
+  font-weight: 400;
+  color: #aeaeae;
+  text-align: justify; }
+  .c-article-summary p {
+    padding: 10px 0; }
+
+.c-article-text {
+  font-size: 13px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #000;
+  padding: 10px 0;
+  text-align: justify; }
+  .c-article-text p {
+    padding: 5px 0; }
+  .c-article-text p:last-child {
+    padding-bottom: 15px; }
+
+.c-article-actions {
+  padding-bottom: 30px; }
+
+.c-article-actions-social {
+  float: right; }
+  .c-article-actions-social:hover:before {
+    content: 'ПОДЕЛИТЬСЯ';
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: #a9a8a8;
+    margin-right: 5px; }
+
+.c-social-net__fb__blog {
+  margin-left: 5px; }
+
+.c-social-net__twitter__blog {
+  margin-left: 5px; }
+
+.c-social-net__vk__blog {
+  margin-left: 5px; }
+
+.c-social-counter__blog {
+  margin-left: 3px; }
+
 .l-header {
   width: 100%;
   position: relative; }
@@ -1100,122 +1244,4 @@ a {
   padding: 60px 0; }
 
 .l-blogs-container__main {
-  width: 70%; }
-
-.c-blog-item--image {
-  width: 100%;
-  position: relative; }
-  .c-blog-item--image img {
-    width: 100%; }
-
-.c-blog-item--image-button {
-  position: absolute;
-  bottom: 30px;
-  left: 30px; }
-
-.c-blog-item--header__big {
-  padding: 25px 0;
-  border-bottom: 0.5px solid #e6e6e6; }
-  .c-blog-item--header__big a {
-    font-size: 21px;
-    font-weight: 700;
-    color: #000; }
-
-.c-blog-item--author {
-  width: 100%;
-  padding: 10px 0; }
-
-.c-blog-item--author-userpic {
-  width: 55px;
-  height: 55px;
-  float: left;
-  margin-right: 10px; }
-
-.c-blog-item--author-name {
-  float: left;
-  max-width: 50%;
-  padding-top: 10px; }
-
-.c-blog-item--author-text__primary a {
-  font-size: 14px;
-  font-weight: 700;
-  color: #101010; }
-
-.c-blog-item--author-text__primary a:hover {
-  text-decoration: underline; }
-
-.c-blog-item--author-text__secondary {
-  font-size: 8px;
-  letter-spacing: 0.5px;
-  font-weight: 700;
-  color: #a9a8a8; }
-
-.c-blog-item--author-ingsoc {
-  float: right;
-  position: relative;
-  padding-top: 15px; }
-  .c-blog-item--author-ingsoc:hover:before {
-    content: 'НАЙТИ МЕНЯ';
-    font-size: 10px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    color: #a9a8a8;
-    position: absolute;
-    top: 50%;
-    left: -100px; }
-
-.c-blog-item--author-ingsoc-branch {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #eee;
-  line-height: 30px;
-  vertical-align: middle;
-  text-align: center;
-  display: inline-block;
-  margin-right: 10px; }
-  .c-blog-item--author-ingsoc-branch:last-child {
-    margin-right: 0; }
-
-.c-blog-item--summary {
-  font-size: 15px;
-  font-weight: 400;
-  color: #aeaeae;
-  text-align: justify; }
-  .c-blog-item--summary p {
-    padding: 10px 0; }
-
-.c-blog-item--article-text {
-  font-size: 13px;
-  line-height: 1.7;
-  font-weight: 400;
-  color: #000;
-  padding: 10px 0;
-  text-align: justify; }
-  .c-blog-item--article-text p {
-    padding: 5px 0; }
-
-.c-blog-item--actions {
-  padding-bottom: 30px; }
-
-.c-blog-item--actions-social {
-  float: right; }
-  .c-blog-item--actions-social:hover:before {
-    content: 'ПОДЕЛИТЬСЯ';
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    color: #a9a8a8;
-    margin-right: 5px; }
-
-.c-social-net__fb__blog {
-  margin-left: 5px; }
-
-.c-social-net__twitter__blog {
-  margin-left: 5px; }
-
-.c-social-net__vk__blog {
-  margin-left: 5px; }
-
-.c-social-counter__blog {
-  margin-left: 3px; }
+  width: 66%; }

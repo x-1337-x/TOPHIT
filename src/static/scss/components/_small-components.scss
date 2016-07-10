@@ -157,4 +157,9 @@
   border-color: #c44d9b;
 }
 
+.c-divider__green {
+  @extend .c-divider;
+  border-color: #60c80d;
+}
+
 //=========================
