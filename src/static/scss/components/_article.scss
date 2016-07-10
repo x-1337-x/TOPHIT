@@ -151,17 +151,8 @@
   }
 }
 
-.c-article-ingsoc-branch {
-  width: 30px;
-  height: 30px;
-
-  border-radius: 50%;
-  border: 1px solid #eee;
-
-  line-height: 30px;
-  vertical-align: middle;
-  text-align: center;
-  display: inline-block;
+.c-ingsoc-branch__article {
+  @extend .c-ingsoc-branch;
 
   margin-right: 10px;
 
@@ -229,20 +220,20 @@
   }
 }
 
-.c-social-net__fb__blog {
+.c-social-net__fb__article {
   @extend .c-social-net__fb;
   margin-left: 5px;
 }
-.c-social-net__twitter__blog {
+.c-social-net__twitter__article {
   @extend .c-social-net__twitter;
   margin-left: 5px;
 }
-.c-social-net__vk__blog {
+.c-social-net__vk__article {
   @extend .c-social-net__vk;
   margin-left: 5px;
 }
 
-.c-social-counter__blog {
+.c-social-counter__article {
   @extend .c-social-counter;
   margin-left: 3px;
 }

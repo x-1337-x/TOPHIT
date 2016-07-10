@@ -504,14 +504,14 @@ a {
 .c-icn-btn__blue {
   background-color: #2b8bcc; }
 
-.c-social-counter, .c-social-counter__blog {
+.c-social-counter, .c-social-counter__article {
   font-size: 10px;
   font-weight: 700;
   color: #000;
   display: inline-block;
   letter-spacing: 1px; }
 
-.c-social-net, .c-social-net__fb, .c-social-net__fb__blog, .c-social-net__twitter, .c-social-net__twitter__blog, .c-social-net__vk, .c-social-net__vk__blog {
+.c-social-net, .c-social-net__fb, .c-social-net__fb__article, .c-social-net__twitter, .c-social-net__twitter__article, .c-social-net__vk, .c-social-net__vk__article {
   width: 26px;
   height: 26px;
   line-height: 26px;
@@ -519,14 +519,24 @@ a {
   text-align: center;
   display: inline-block; }
 
-.c-social-net__fb, .c-social-net__fb__blog {
+.c-social-net__fb, .c-social-net__fb__article {
   background-color: #4e6ab1; }
 
-.c-social-net__twitter, .c-social-net__twitter__blog {
+.c-social-net__twitter, .c-social-net__twitter__article {
   background-color: #1aacea; }
 
-.c-social-net__vk, .c-social-net__vk__blog {
+.c-social-net__vk, .c-social-net__vk__article {
   background-color: #436c98; }
+
+.c-ingsoc-branch, .c-ingsoc-branch__article {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block; }
 
 .c-slide-controls-indicator {
   margin: auto;
@@ -980,17 +990,9 @@ a {
     top: 50%;
     left: -100px; }
 
-.c-article-ingsoc-branch {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #eee;
-  line-height: 30px;
-  vertical-align: middle;
-  text-align: center;
-  display: inline-block;
+.c-ingsoc-branch__article {
   margin-right: 10px; }
-  .c-article-ingsoc-branch:last-child {
+  .c-ingsoc-branch__article:last-child {
     margin-right: 0; }
 
 .c-article-summary {
@@ -1026,16 +1028,16 @@ a {
     color: #a9a8a8;
     margin-right: 5px; }
 
-.c-social-net__fb__blog {
+.c-social-net__fb__article {
   margin-left: 5px; }
 
-.c-social-net__twitter__blog {
+.c-social-net__twitter__article {
   margin-left: 5px; }
 
-.c-social-net__vk__blog {
+.c-social-net__vk__article {
   margin-left: 5px; }
 
-.c-social-counter__blog {
+.c-social-counter__article {
   margin-left: 3px; }
 
 .l-header {
