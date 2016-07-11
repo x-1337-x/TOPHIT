@@ -1,5 +1,6 @@
 .c-set-item {
   min-width: 33%;
+  max-width: 300px;
   min-height: 70px;
   line-height: 70px;
   vertical-align: middle;
@@ -225,6 +226,7 @@
 
 .c-set-item__chart {
   min-width: 33%;
+  max-width: 300px;
   min-height: 60px;
   line-height: 60px;
   vertical-align: middle;
@@ -241,6 +243,13 @@
       color: #3498db;
     }
   }
+}
+
+.c-set-item--text__chart {
+  overflow: hidden;
+  padding: 12px 0 0 0;
+  margin: 0 30px 0 80px;
+  max-width: 200px;
 }
 
 .c-set-item--position {
@@ -382,13 +391,6 @@
 }
 
 //=============================
-
-.c-set-item--text__chart {
-  overflow: hidden;
-  padding: 12px 0 0 0;
-  margin: 0 30px 0 80px;
-  max-width: 200px;
-}
 
 .c-btn-rounded__set {
   @extend .c-btn-rounded;

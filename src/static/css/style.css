@@ -574,6 +574,7 @@ a {
 
 .c-set-item {
   min-width: 33%;
+  max-width: 300px;
   min-height: 70px;
   line-height: 70px;
   vertical-align: middle;
@@ -745,6 +746,7 @@ a {
 
 .c-set-item__chart {
   min-width: 33%;
+  max-width: 300px;
   min-height: 60px;
   line-height: 60px;
   vertical-align: middle;
@@ -755,6 +757,12 @@ a {
     border-top: 0.4px solid #f2f2f2; }
   .c-set-item__chart:hover .c-set-item--text__primary {
     color: #3498db; }
+
+.c-set-item--text__chart {
+  overflow: hidden;
+  padding: 12px 0 0 0;
+  margin: 0 30px 0 80px;
+  max-width: 200px; }
 
 .c-set-item--position {
   float: left;
@@ -842,12 +850,6 @@ a {
     position: absolute;
     top: 25px;
     left: 10px; }
-
-.c-set-item--text__chart {
-  overflow: hidden;
-  padding: 12px 0 0 0;
-  margin: 0 30px 0 80px;
-  max-width: 200px; }
 
 .c-section-header {
   width: 100%;
@@ -1202,8 +1204,7 @@ a {
   max-width: 33.333%;
   min-width: 300px;
   float: left;
-  margin-right: 35px;
-  padding-left: 5px; }
+  margin-right: 35px; }
   .l-set:first-child {
     padding: 0; }
   .l-set:last-child {
