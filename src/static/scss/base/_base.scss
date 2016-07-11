@@ -24,6 +24,16 @@ body {
   padding: 0 20px 20px 20px ;
 }
 
+.l-articles-container__main {
+  float: left;
+  width: 64%;
+}
+
+.l-articles-aside-container {
+  float: right;
+  width: 32%;
+}
+
 .icon {
   display: inline-block;
 }
@@ -50,6 +60,10 @@ a {
 
 .hidden {
   display: none !important;
+}
+
+.soft-hidden {
+  display: none;
 }
 
 .pull-left {

@@ -424,6 +424,14 @@ body {
 .article-wrapper__small {
   padding: 0 20px 20px 20px; }
 
+.l-articles-container__main {
+  float: left;
+  width: 64%; }
+
+.l-articles-aside-container {
+  float: right;
+  width: 32%; }
+
 .icon, .c-set-item--rating__negative:after, .c-set-item--rating__supernegative:after, .c-set-item--rating__positive:before, .c-set-item--rating__superpositive:before, .c-set-item--rating__neutral:before, .c-set-item--rating__new:before, .c-set-item--rating__re:before {
   display: inline-block; }
 
@@ -446,6 +454,9 @@ a {
 
 .hidden {
   display: none !important; }
+
+.soft-hidden {
+  display: none; }
 
 .pull-left {
   float: left !important; }
@@ -880,10 +891,26 @@ a {
   color: #000;
   line-height: 1.3333; }
 
-.c-article-frame {
+.c-article-frame, .c-article-frame__small {
   border: 1px solid #f2f2f2;
   background-color: #fff;
   margin-bottom: 30px; }
+
+.c-article-frame-placeholder {
+  position: relative;
+  height: 360px;
+  width: 305px;
+  margin-bottom: 30px; }
+
+.c-article-frame__small {
+  width: 305px;
+  margin-bottom: 10px; }
+  .c-article-frame__small:hover {
+    position: absolute;
+    top: 0;
+    z-index: 5; }
+    .c-article-frame__small:hover .c-article-summary__small {
+      display: block; }
 
 .c-article-info-box {
   width: 100%;
@@ -941,12 +968,10 @@ a {
   bottom: 30px;
   left: 30px; }
 
-.c-article-header-container__big {
-  padding: 25px 0;
-  border-bottom: 0.5px solid #e6e6e6; }
+.c-article-header-container__big, .c-article-header-container__big__boredered {
+  padding: 25px 0; }
 
-.c-article-header-container__small {
-  padding: 25px 0;
+.c-article-header-container__big__boredered {
   border-bottom: 0.5px solid #e6e6e6; }
 
 .c-article-header__big,
@@ -1015,6 +1040,14 @@ a {
   color: #aeaeae;
   text-align: justify; }
   .c-article-summary p {
+    padding: 10px 0; }
+
+.c-article-summary__small {
+  font-size: 13px;
+  font-weight: 400;
+  color: #aeaeae;
+  text-align: justify; }
+  .c-article-summary__small p {
     padding: 10px 0; }
 
 .c-article-text {
@@ -1255,10 +1288,9 @@ a {
   width: 100%;
   padding: 60px 0; }
 
-.l-blogs-container__main {
-  float: left;
-  width: 66%; }
+.l-news {
+  width: 100%; }
 
-.l-blogs-aside-container {
-  float: right;
-  width: 33%; }
+.l-news--body {
+  width: 100%;
+  padding: 60px 0; }
