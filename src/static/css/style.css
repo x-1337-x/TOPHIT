@@ -583,11 +583,8 @@ a {
   .c-set-item:hover .c-set-item--text__primary {
     color: #3498db; }
 
-.c-set-item--pic,
-.c-set-item--text {
-  float: left; }
-
 .c-set-item--pic {
+  float: left;
   line-height: 0;
   margin-right: 10px; }
   .c-set-item--pic a {
@@ -595,8 +592,7 @@ a {
 
 .c-set-item--text {
   overflow: hidden;
-  padding: 15px 0;
-  max-width: 200px; }
+  padding: 15px 0; }
 
 .c-set-item--text__primary {
   font-size: 14px;
@@ -850,9 +846,8 @@ a {
 .c-set-item--text__chart {
   overflow: hidden;
   padding: 12px 0 0 0;
-  margin-left: 5px;
-  max-width: 200px;
-  float: left; }
+  margin: 0 30px 0 80px;
+  max-width: 200px; }
 
 .c-section-header {
   width: 100%;

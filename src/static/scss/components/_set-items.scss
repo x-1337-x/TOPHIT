@@ -14,12 +14,8 @@
   }
 }
 
-.c-set-item--pic,
-.c-set-item--text {
-  float: left;
-}
-
 .c-set-item--pic {
+  float: left;
   line-height: 0;
   margin-right: 10px;
   a {
@@ -30,7 +26,6 @@
 .c-set-item--text {
   overflow: hidden;
   padding: 15px 0;
-  max-width: 200px;
 }
 
 .c-set-item--text__primary {
@@ -391,9 +386,8 @@
 .c-set-item--text__chart {
   overflow: hidden;
   padding: 12px 0 0 0;
-  margin-left: 5px;
+  margin: 0 30px 0 80px;
   max-width: 200px;
-  float: left;
 }
 
 .c-btn-rounded__set {
