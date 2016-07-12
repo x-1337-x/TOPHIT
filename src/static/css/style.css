@@ -438,14 +438,15 @@ body {
 a {
   text-decoration: none; }
 
-.clearfix:before, .c-slider-controls:before, .c-slider-controls-indicator:before,
+.clearfix:before, .c-slide__team:before, .c-slider-controls:before, .c-slider-controls-indicator:before,
 .clearfix:after,
+.c-slide__team:after,
 .c-slider-controls:after,
 .c-slider-controls-indicator:after {
   content: "";
   display: table; }
 
-.clearfix:after, .c-slider-controls:after, .c-slider-controls-indicator:after {
+.clearfix:after, .c-slide__team:after, .c-slider-controls:after, .c-slider-controls-indicator:after {
   clear: both; }
 
 .truncate, .c-set-item--text__primary, .c-set-item--text__secondary, .c-section-header--text {
@@ -870,6 +871,7 @@ a {
 .c-section-header--text {
   display: block;
   font-size: 12px;
+  letter-spacing: 1px;
   font-weight: 700;
   color: #000;
   line-height: 1.3333; }
@@ -1076,12 +1078,20 @@ a {
 .c-slide {
   text-align: center; }
 
+.c-slide-content__team {
+  margin: 0 10px;
+  float: left; }
+
 .c-slider-controls-container {
   width: 100%;
   padding: 20px 0; }
 
 .c-slider-controls {
   width: 100%; }
+
+.c-slider-controls__team {
+  line-height: 400px;
+  vertical-align: middle; }
 
 .c-slider-controls-indicator {
   margin: auto;
@@ -1117,6 +1127,53 @@ a {
   font-size: 21px;
   font-weight: 300;
   color: #a1a1a1; }
+
+.c-slide-card {
+  padding: 20px;
+  width: 250px;
+  margin: 0 25px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3); }
+
+.c-slide-card-userpic {
+  display: block; }
+
+.c-slide-card-textblock {
+  padding: 15px 0; }
+
+.c-slide-card-text__primary {
+  font-size: 16px;
+  font-weight: 700;
+  color: #101010; }
+  .c-slide-card-text__primary:hover {
+    text-decoration: underline; }
+
+.c-slide-card-text__secondary {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #a9a8a8; }
+
+.c-slide-card-related {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 0; }
+
+.c-slide-card-related-icon {
+  float: right;
+  width: 20px; }
+
+.c-slide-card-related-text {
+  vertical-align: middle;
+  margin-right: 20px;
+  line-height: 16px; }
+  .c-slide-card-related-text a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #3498db; }
+
+.c-slide-card-social {
+  padding-top: 20px; }
 
 .l-header {
   width: 100%;
@@ -1351,3 +1408,9 @@ a {
 
 .l-slide-text {
   padding-bottom: 40px; }
+
+.l-team {
+  width: 100%; }
+
+.l-team-body {
+  padding: 60px 0; }

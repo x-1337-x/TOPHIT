@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.c-slide__team {
+  @extend .clearfix;
+}
+
+.c-slide-content__team {
+  margin: 0 10px;
+  float: left;
+}
+
+//  CONTROLS  //
+
 .c-slider-controls-container {
   width: 100%;
   padding: 20px 0;
@@ -11,6 +22,13 @@
   @extend .clearfix;
   width: 100%;
 }
+
+.c-slider-controls__team {
+  line-height: 400px;
+  vertical-align: middle;
+}
+
+//=====================
 
 //  SLIDER INDICATOR  //
 
@@ -63,6 +81,69 @@
   font-size: 21px;
   font-weight: 300;
   color: #a1a1a1;
+}
+
+//=========================//
+
+// BUSINESS CARD  //
+.c-slide-card {
+  padding: 20px;
+  width: 250px;
+  margin: 0 25px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.c-slide-card-userpic {
+  display: block;
+}
+
+.c-slide-card-textblock {
+  padding: 15px 0;
+}
+
+.c-slide-card-text__primary {
+  font-size: 16px;
+  font-weight: 700;
+  color: #101010;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.c-slide-card-text__secondary {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #a9a8a8;
+}
+
+.c-slide-card-related {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 0;
+}
+
+.c-slide-card-related-icon {
+  float: right;
+  width: 20px;
+}
+
+.c-slide-card-related-text {
+  vertical-align: middle;
+  margin-right: 20px;
+  line-height: 16px;
+
+  a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #3498db;
+  }
+}
+
+.c-slide-card-social {
+  padding-top: 20px;
 }
 
 //=========================//
