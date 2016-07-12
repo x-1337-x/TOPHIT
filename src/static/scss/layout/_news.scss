@@ -1,8 +1,17 @@
 .l-news {
   width: 100%;
+  box-shadow: 0px 11px 13px 0px rgba(0, 0, 0, 0.55);
+  position: relative;
+  z-index: 10;
 }
 
 .l-news--body {
   width: 100%;
-  padding: 60px 0;
+  margin: 60px 0;
+}
+
+.l-news-readmore {
+  width: 100%;
+  height: 35px;
+  text-align: center;
 }

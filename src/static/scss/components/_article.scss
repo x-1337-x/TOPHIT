@@ -252,6 +252,16 @@
   }
 }
 
+.c-btn-rounded__article__padded {
+  padding: 10px 60px;
+  @extend .c-btn-rounded;
+
+  &:hover {
+    background-color: #2281c0;
+    color: #fff;
+  }
+}
+
 .c-article-actions-social {
   float: right;
 
