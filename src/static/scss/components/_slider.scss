@@ -6,10 +6,44 @@
   @extend .clearfix;
 }
 
-.c-slide-content__team {
+.c-slider-content__team {
   margin: 0 10px;
   float: left;
 }
+
+.c-slide__parnters {
+  @extend .clearfix;
+}
+
+.c-slider-content__partners {
+  float: left;
+  margin: 0 auto;
+}
+
+.c-slide-img-container__partners {
+  width: 140px;
+  height: 100px;
+  margin: 0 5px;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+
+  img {
+    -webkit-filter: grayscale(90%);
+    vertical-align: middle;
+  }
+
+  img:hover {
+    -webkit-filter: none;
+  }
+
+  a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
 
 //  CONTROLS  //
 
@@ -25,6 +59,11 @@
 
 .c-slider-controls__team {
   line-height: 400px;
+  vertical-align: middle;
+}
+
+.c-slider-controls__partners {
+  line-height: 100px;
   vertical-align: middle;
 }
 
