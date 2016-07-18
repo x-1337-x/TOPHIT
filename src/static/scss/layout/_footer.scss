@@ -41,13 +41,10 @@
 }
 
 .l-footer-columns {
-  margin-right: 280px;
+  margin-right: 300px;
   padding: 20px 0;
   columns: 150px 4;
-
-  ul {
-    padding: 0px 0 20px 40px;
-  }
+  column-gap: 20px;
 }
 
 .c-footer-text__primary {
@@ -80,4 +77,21 @@
 
 .c-footer-info-text__underline {
   text-decoration: underline;
+}
+
+
+@media (min-width:320px) and (max-width:640px) {
+  .l-footer-columns {
+    margin-right: 0;
+    padding: 20px;
+    columns: 1;
+    column-gap: 20px;
+  }
+
+  .l-footer-info {
+    width: 100%;
+    padding: 25px;
+    background-color: #fff;
+    float: none;
+  }
 }

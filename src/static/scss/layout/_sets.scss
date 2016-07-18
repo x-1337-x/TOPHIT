@@ -18,8 +18,7 @@
 }
 
 .l-sets-header-text-block {
-  max-width: 33.333%;
-  min-width: 300px;
+  width: 300px;
   float: left;
   margin-right: 40px;
 
@@ -38,7 +37,6 @@
 
 .l-set {
   max-width: 33.333%;
-  min-width: 300px;
   float: left;
   margin-right: 35px;
 
@@ -53,7 +51,6 @@
 
 .l-set__chart {
   max-width: 33.333%;
-  min-width: 300px;
   float: left;
   margin-right: 27px;
   padding: 10px 5px 0 0;
